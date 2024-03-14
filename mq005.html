@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos5/styles.css">
+    <link rel="stylesheet" href="estilos5/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>O meu Site</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">Menu</span>
+        <menu id="itens"></menu>
+        <ul>
+            <li>
+                <a href="#">Opção 1</a>
+            </li>
+            <li>
+                <a href="#">Opção 2</a>
+            </li>
+            <li>
+                <a href="#">Opção 3</a>
+            </li>
+            <li>
+                <a href="#">Opção 4</a>
+            </li>
+            <li>
+                <a href="#">Opção 5</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quas nobis aliquid, magni a iure officiis! Quaerat sit dicta
+                eaque accusamus perferendis dolores molestias, nesciunt
+                necessitatibus id unde voluptate, quibusdam culpa.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Modi qui aliquid placeat soluta nemo officia exercitationem
+                quas omnis, sunt, quae facilis ea officiis, quod expedita
+                rem quisquam necessitatibus quo sapiente?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veniam minus facere aliquid, quis laborum, quia tempore
+                exercitationem ratione nihil voluptatum quos maiores, suscipit
+                nulla eveniet et recusandae quas adipisci obcaecati?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odio temporibus ut eaque sequi soluta, illum totam.
+                Quam dolore aspernatur debitis corporis sunt veritatis,
+                fficia, provident cum, harum ducimus unde rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veniam minus facere aliquid, quis laborum, quia tempore
+                exercitationem ratione nihil voluptatum quos maiores, suscipit
+                nulla eveniet et recusandae quas adipisci obcaecati?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odio temporibus ut eaque sequi soluta, illum totam.
+                uam dolore aspernatur debitis corporis sunt veritatis,
+                officia, provident cum, harum ducimus unde rerum.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                intens.styles.display='block'
+            }else{
+                intens.styles.display='none'
+            }
+        }
+
+        function clickMenu () {
+            if (intens.styles.display='block') {
+                intens.styles.display='none'
+            }else{
+                intens.styles.display='block'
+            }
+        }
+    </script>
+</body>
+</html>
